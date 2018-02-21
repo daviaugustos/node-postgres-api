@@ -5,11 +5,12 @@
   "main": "index.js",
   "author": "Davi Santos",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
-    "express": "^4.16.2",
-    "pg": "^7.4.1",
-    "underscore": "^1.8.3"
+    "express": "^4.16.2"
   }
 }
