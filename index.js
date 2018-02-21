@@ -18,24 +18,15 @@ const client = new Client({
 });
 client.connect();
   
-app.get('/users', (req, res) => {
-    // const query = {
-    //     text: 'INSERT INTO users(login, password) VALUES($1, $2)',
-    //     values: ['brianc', 'senhaTeste3'],
-    // };
-
-    const query ={
-        text: 'SELECT * FROM users',
+app.get('/users', async (req, res) => {
+    const data = {
+        login: 'Usuário teste',
+        password: 'senhaTeste'
     };
 
-    client.query(query)
-        .then((resultSet) => {
-            const data = resultSet.rows;
-            res.status(200).json(data);
-        })
-        .catch((error) => {
-            res.status(500).json(error);
-        });
+    await setInterval(()=>{
+        res.status(200).json(data);
+    },  5000);
 });
 
 app.post('/users', (req, res) => {
