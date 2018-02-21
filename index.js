@@ -6,7 +6,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'));
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => console.log('Example app listening on port' + port));
  
 app.get('/users', async (req, res) => {
     const data = {
