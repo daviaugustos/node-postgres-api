@@ -29,7 +29,7 @@ app.post('/users', async (req, res) => {
         login: login,
         password: password
     };
-
+    console.log(data);
     await setTimeout(()=>{
         res.status(200).json(data);
     },  5000);
