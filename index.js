@@ -15,7 +15,7 @@ app.get('/users', async (req, res) => {
         login: 'Usuário teste',
         password: 'senhaTeste'
     };
-
+    console.log("/users - GET", data);
     await setTimeout(()=>{
         res.status(200).json(data);
     },  5000);
@@ -29,7 +29,7 @@ app.post('/users', async (req, res) => {
         login: login,
         password: password
     };
-    console.log(data);
+    console.log("/users - POST", data);
     await setTimeout(()=>{
         res.status(200).json(data);
     },  5000);
