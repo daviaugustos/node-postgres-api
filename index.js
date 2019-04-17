@@ -26,8 +26,20 @@ app.post("/auth", async (req, res) => {
 
   const data = {
     invalid_action_message: "",
-    login: login,
-    password: password,
+    permissions: [
+      {
+        right: "formulario",
+        create: true,
+        update: true,
+        delete: true
+      },
+      {
+        right: "relatorio",
+        create: true,
+        update: true,
+        delete: true
+      }
+    ],
     token: "Basic Q2FkQ2xpZW50ZTpMVFpleGxzcnYxMjA5"
   };
   console.log("/users - POST", data);
