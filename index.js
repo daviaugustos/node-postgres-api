@@ -27,7 +27,8 @@ app.post("/auth", async (req, res) => {
   const data = {
     invalid_action_message: "",
     login: login,
-    password: password
+    password: password,
+    token: "Basic Q2FkQ2xpZW50ZTpMVFpleGxzcnYxMjA5"
   };
   console.log("/users - POST", data);
   await setTimeout(() => {
