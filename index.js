@@ -12,7 +12,7 @@ app.use(function(req, res, next) {
   if (!req.get("Authorization")) {
     return res
       .status(403)
-      .json({ invalid_action_message: "no_credentials_sent" });
+      .json({ invalidActionMessage: "no_credentials_sent" });
   }
   next();
 });
@@ -36,7 +36,7 @@ app.post("/auth", async (req, res) => {
   const { login, password } = req.body;
 
   const data = {
-    invalid_action_message: "",
+    invalidActionMessage: "",
     permissions: [
       {
         right: "formulario",
@@ -64,7 +64,7 @@ app.post("/auth/error", async (req, res) => {
   const { login, password } = req.body;
 
   const data = {
-    invalid_action_message: "invalid_credentials"
+    invalidActionMessage: "invalid_credentials"
   };
   console.log("/auth/error - POST", data);
   await setTimeout(() => {
@@ -74,8 +74,8 @@ app.post("/auth/error", async (req, res) => {
 
 app.get("/formularios/tipos", async (req, res) => {
   const data = {
-    invalid_action_message: "",
-    form_types: [
+    invalidActionMessage: "",
+    formTypes: [
       {
         id: 1,
         name: "Housekeeping"
