@@ -74,6 +74,7 @@ app.post("/auth/error", async (req, res) => {
 
 app.get("/formularios/tipos", async (req, res) => {
   const data = {
+    invalid_action_message: "",
     form_types: [
       {
         id: 1,
@@ -85,7 +86,7 @@ app.get("/formularios/tipos", async (req, res) => {
       }
     ]
   };
-  console.log("/users - POST", data);
+  console.log("/formularios/tipos - GET", data);
   await setTimeout(() => {
     res.status(200).json(data);
   }, 5000);
