@@ -91,3 +91,57 @@ app.get("/formularios/tipos", async (req, res) => {
     res.status(200).json(data);
   }, 5000);
 });
+
+app.get("/formularios/tipos", async (req, res) => {
+  const data = {
+    invalidActionMessage: "",
+    formTypes: [
+      {
+        id: 1,
+        name: "Housekeeping"
+      },
+      {
+        id: 2,
+        name: "Inspeção"
+      }
+    ]
+  };
+  console.log("/formularios/tipos - GET", data);
+  await setTimeout(() => {
+    res.status(200).json(data);
+  }, 5000);
+});
+
+app.post("/formularios", async (req, res) => {
+  const { typeId } = req.body;
+
+  const data = {
+    invalidActionMessage: "",
+    forms: [
+      {
+        id: 1,
+        title: "FO-00SSMA0029"
+      },
+      {
+        id: 2,
+        title: "FO-00SSMA0030"
+      },
+      {
+        id: 3,
+        title: "FO-00SSMA0031"
+      },
+      {
+        id: 4,
+        title: "FO-00SSMA0032"
+      },
+      {
+        id: 5,
+        title: "FO-00SSMA0033"
+      }
+    ]
+  };
+  console.log("/formularios - POST", data);
+  await setTimeout(() => {
+    res.status(200).json(data);
+  }, 5000);
+});
