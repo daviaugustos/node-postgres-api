@@ -29,7 +29,7 @@ app.get("/users", async (req, res) => {
   console.log("/users - GET", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
 
 app.post("/auth", async (req, res) => {
@@ -56,7 +56,7 @@ app.post("/auth", async (req, res) => {
   console.log("/auth - POST", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
 
 //endpoint criado apenas para demonstrar como seria uma resposta com credenciais invalidas
@@ -69,7 +69,7 @@ app.post("/auth/error", async (req, res) => {
   console.log("/auth/error - POST", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
 
 app.get("/formularios/tipos", async (req, res) => {
@@ -89,27 +89,32 @@ app.get("/formularios/tipos", async (req, res) => {
   console.log("/formularios/tipos - GET", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
 
-app.get("/formularios/tipos", async (req, res) => {
+app.post("/formularios/respondidos/consultar", async (req, res) => {
   const data = {
     invalidActionMessage: "",
-    formTypes: [
-      {
-        id: 1,
-        name: "Housekeeping"
-      },
-      {
-        id: 2,
-        name: "Inspeção"
-      }
-    ]
+    answeredForms: []
+    // answeredForms: [
+    //   {
+    //     id: 1,
+    //     title: "FO-00SSMA0029"
+    //   },
+    //   {
+    //     id: 2,
+    //     title: "FO-00SSMA0030"
+    //   },
+    //   {
+    //     id: 3,
+    //     title: "FO-00SSMA0031"
+    //   }
+    // ]
   };
-  console.log("/formularios/tipos - GET", data);
+  console.log("/formularios/respondidos/consultar - POST", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
 
 app.post("/formularios", async (req, res) => {
@@ -143,5 +148,5 @@ app.post("/formularios", async (req, res) => {
   console.log("/formularios - POST", data);
   await setTimeout(() => {
     res.status(200).json(data);
-  }, 1500);
+  }, 500);
 });
