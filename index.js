@@ -93,6 +93,7 @@ app.get("/formularios/tipos", async (req, res) => {
 });
 
 app.post("/formularios/respondidos/consultar", async (req, res) => {
+  const { startDate, endDate, formTypeId, formTitle, userId } = req.body;
   const data = {
     invalidActionMessage: "",
     answeredForms: []
@@ -125,23 +126,43 @@ app.post("/formularios", async (req, res) => {
     forms: [
       {
         id: 1,
-        title: "FO-00SSMA0029"
+        title: "FO-00SSMA0029",
+        location: {
+          cityName: "São José do Rio Preto",
+          id: 1
+        }
       },
       {
         id: 2,
-        title: "FO-00SSMA0030"
+        title: "FO-00SSMA0030",
+        location: {
+          cityName: "Potirendaba",
+          id: 2
+        }
       },
       {
         id: 3,
-        title: "FO-00SSMA0031"
+        title: "FO-00SSMA0031",
+        location: {
+          cityName: "Votuporanga",
+          id: 3
+        }
       },
       {
         id: 4,
-        title: "FO-00SSMA0032"
+        title: "FO-00SSMA0032",
+        location: {
+          cityName: "São José do Rio Preto",
+          id: 1
+        }
       },
       {
         id: 5,
-        title: "FO-00SSMA0033"
+        title: "FO-00SSMA0033",
+        location: {
+          cityName: "Votuporanga",
+          id: 3
+        }
       }
     ]
   };
