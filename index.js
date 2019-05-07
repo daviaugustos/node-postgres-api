@@ -37,6 +37,59 @@ app.post("/auth", async (req, res) => {
 
   const data = {
     invalidActionMessage: "",
+    offlineData: {
+      date: "2019-05-07",
+      formTypes: [
+        {
+          id: 1,
+          name: "HouseKeeping",
+          forms: [
+            {
+              id: 1,
+              title: "FHK-00SSMA0029",
+              location: {
+                cityName: "São José do Rio Preto",
+                id: 1
+              },
+              questions: []
+            },
+            {
+              id: 2,
+              title: "FHK-00SSMA0028",
+              location: {
+                cityName: "Olímpia",
+                id: 2
+              },
+              questions: []
+            }
+          ]
+        },
+        {
+          id: 2,
+          name: "Inspeção",
+          forms: [
+            {
+              id: 3,
+              title: "FI-00SSMA0022",
+              location: {
+                cityName: "São José do Rio Preto",
+                id: 1
+              },
+              questions: []
+            },
+            {
+              id: 4,
+              title: "FI-00SSMA0023",
+              location: {
+                cityName: "Olímpia",
+                id: 2
+              },
+              questions: []
+            }
+          ]
+        }
+      ]
+    },
     permissions: [
       {
         right: "formulario",
