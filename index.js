@@ -92,14 +92,37 @@ app.post("/auth", async (req, res) => {
     },
     permissions: [
       {
-        right: "formulario",
+        right: "formularios",
         create: true,
+        read: true,
+        update: true,
+        delete: true
+      },
+      {
+        right: "meio_ambiente",
+        create: true,
+        read: true,
+        update: true,
+        delete: true
+      },
+      {
+        right: "treinamento",
+        create: true,
+        read: true,
+        update: true,
+        delete: true
+      },
+      {
+        right: "respostas",
+        create: true,
+        read: true,
         update: true,
         delete: true
       },
       {
         right: "relatorio",
         create: true,
+        read: true,
         update: true,
         delete: true
       }
