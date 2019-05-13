@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const moment = require("moment");
 const app = express();
 
 app.use(cors());
@@ -38,7 +39,7 @@ app.post("/auth", async (req, res) => {
   const data = {
     invalidActionMessage: "",
     offlineData: {
-      date: "2019-05-09",
+      date: moment().format("YYYY-MM-DD"),
       formTypes: [
         {
           id: 1,
