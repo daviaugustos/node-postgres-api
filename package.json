@@ -1,7 +1,7 @@
 {
   "name": "trade-api-test",
   "version": "0.0.1",
-  "description": "Api para teste do aplicativo zoombox-trade",
+  "description": "Api for app tests",
   "main": "index.js",
   "author": "Davi Santos",
   "license": "MIT",
