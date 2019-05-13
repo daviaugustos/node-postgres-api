@@ -46,9 +46,10 @@ app.post("/auth", async (req, res) => {
           forms: [
             {
               id: 1,
-              codigo: "00150",
-              revisao: 3,
-              data_criacao: "2019-01-01",
+              code: "00150",
+              revision: 3,
+              createdAt: "2019-01-01",
+              formTypeId: 1,
               title: "FHK-00SSMA0029",
               location: {
                 cityName: "São José do Rio Preto",
@@ -72,6 +73,10 @@ app.post("/auth", async (req, res) => {
             },
             {
               id: 2,
+              code: "00151",
+              revision: 6,
+              createdAt: "2019-02-02",
+              formTypeId: 1,
               title: "FHK-00SSMA0028",
               location: {
                 cityName: "Olímpia",
@@ -87,6 +92,10 @@ app.post("/auth", async (req, res) => {
           forms: [
             {
               id: 3,
+              code: "00152",
+              revision: 4,
+              createdAt: "2019-03-03",
+              formTypeId: 2,
               title: "FI-00SSMA0022",
               location: {
                 cityName: "São José do Rio Preto",
@@ -96,6 +105,10 @@ app.post("/auth", async (req, res) => {
             },
             {
               id: 4,
+              code: "00153",
+              revision: 5,
+              createdAt: "2019-03-03",
+              formTypeId: 2,
               title: "FI-00SSMA0023",
               location: {
                 cityName: "Olímpia",
