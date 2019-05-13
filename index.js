@@ -50,6 +50,8 @@ app.post("/auth", async (req, res) => {
               revision: 3,
               createdAt: "2019-01-01",
               formTypeId: 1,
+              guidelines:
+                "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
               title: "FHK-00SSMA0029",
               location: {
                 cityName: "São José do Rio Preto",
@@ -77,6 +79,8 @@ app.post("/auth", async (req, res) => {
               revision: 6,
               createdAt: "2019-02-02",
               formTypeId: 1,
+              guidelines:
+                "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
               title: "FHK-00SSMA0028",
               location: {
                 cityName: "Olímpia",
@@ -96,6 +100,8 @@ app.post("/auth", async (req, res) => {
               revision: 4,
               createdAt: "2019-03-03",
               formTypeId: 2,
+              guidelines:
+                "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
               title: "FI-00SSMA0022",
               location: {
                 cityName: "São José do Rio Preto",
@@ -109,6 +115,8 @@ app.post("/auth", async (req, res) => {
               revision: 5,
               createdAt: "2019-03-03",
               formTypeId: 2,
+              guidelines:
+                "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
               title: "FI-00SSMA0023",
               location: {
                 cityName: "Olímpia",
@@ -236,6 +244,8 @@ app.post("/formularios", async (req, res) => {
         revision: 5,
         createdAt: "2019-03-03",
         formTypeId: 1,
+        guidelines:
+          "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
         title: "Formulários de Caldeiras Ultratérmicas Aquecidas",
         location: {
           cityName: "São José do Rio Preto",
@@ -248,6 +258,8 @@ app.post("/formularios", async (req, res) => {
         revision: 5,
         createdAt: "2019-03-03",
         formTypeId: 1,
+        guidelines:
+          "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
         title:
           "Formulários de Caldeiras Ultratérmicas Aquecidas do Estado de São Paulo",
         location: {
@@ -261,6 +273,8 @@ app.post("/formularios", async (req, res) => {
         revision: 5,
         createdAt: "2019-03-03",
         formTypeId: 2,
+        guidelines:
+          "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
         title: "FO-00SSMA0031",
         location: {
           cityName: "Votuporanga",
@@ -273,6 +287,8 @@ app.post("/formularios", async (req, res) => {
         revision: 5,
         createdAt: "2019-03-03",
         formTypeId: 1,
+        guidelines:
+          "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
         title: "FO-00SSMA0032",
         location: {
           cityName: "São José do Rio Preto",
@@ -285,6 +301,8 @@ app.post("/formularios", async (req, res) => {
         revision: 5,
         createdAt: "2019-03-03",
         formTypeId: 2,
+        guidelines:
+          "Realizar o questionário com muita atenção e verossimilaridade com a realidade.",
         title: "FO-00SSMA0033",
         location: {
           cityName: "Votuporanga",
