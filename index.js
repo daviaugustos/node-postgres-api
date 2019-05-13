@@ -232,6 +232,10 @@ app.post("/formularios", async (req, res) => {
     forms: [
       {
         id: 1,
+        code: "00155",
+        revision: 5,
+        createdAt: "2019-03-03",
+        formTypeId: 1,
         title: "Formulários de Caldeiras Ultratérmicas Aquecidas",
         location: {
           cityName: "São José do Rio Preto",
@@ -240,6 +244,10 @@ app.post("/formularios", async (req, res) => {
       },
       {
         id: 2,
+        code: "00156",
+        revision: 5,
+        createdAt: "2019-03-03",
+        formTypeId: 1,
         title:
           "Formulários de Caldeiras Ultratérmicas Aquecidas do Estado de São Paulo",
         location: {
@@ -249,6 +257,10 @@ app.post("/formularios", async (req, res) => {
       },
       {
         id: 3,
+        code: "00157",
+        revision: 5,
+        createdAt: "2019-03-03",
+        formTypeId: 2,
         title: "FO-00SSMA0031",
         location: {
           cityName: "Votuporanga",
@@ -257,6 +269,10 @@ app.post("/formularios", async (req, res) => {
       },
       {
         id: 4,
+        code: "00158",
+        revision: 5,
+        createdAt: "2019-03-03",
+        formTypeId: 1,
         title: "FO-00SSMA0032",
         location: {
           cityName: "São José do Rio Preto",
@@ -265,6 +281,10 @@ app.post("/formularios", async (req, res) => {
       },
       {
         id: 5,
+        code: "00159",
+        revision: 5,
+        createdAt: "2019-03-03",
+        formTypeId: 2,
         title: "FO-00SSMA0033",
         location: {
           cityName: "Votuporanga",
