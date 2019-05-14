@@ -38,7 +38,7 @@ app.post("/auth", async (req, res) => {
   const data = {
     invalidActionMessage: "",
     offlineData: {
-      date: "2019-05-13",
+      date: "2019-05-14",
       formTypes: [
         {
           id: 1,
